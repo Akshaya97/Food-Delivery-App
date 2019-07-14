@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="styles/style.css">
+    <body>
+        <script src="js/login.js"></script> 
+        <div class="login-box">
+            <h1> Login</h1>
+            <form name="loginform" action="php/login.php" onsubmit="return validateForm()" method="post">
+                <div class="textbox">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" placeholder="Username" required name="username">
+                </div>
+                <div class="textbox">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" placeholder="Password" required name="password">
+                </div>
+                <input class="btn"  type="submit" name="" value="Sign In">
+                <p class="message">Not Registered? <a href="register.html"><b>Register</b></a></p>
+            </form>
+        </div>
+    </body>
+</html>

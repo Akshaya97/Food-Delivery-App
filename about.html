@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="styles/about.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+         #more {display: none;}
+         h2   {color: blue;} 
+      </style>
+   </head>
+   <body>
+      <center>
+         <h2>Missions and Visions</h2>
+      </center>
+      <center>
+         <p>It all started back in 2019 when a student decided they wanted to make life easier by changing the way India eats - all with just a tap! <span id="dots">...</span><span id="more"> With their idea of ’hyperlocal food delivery’, all they needed was the tech to power it and were introduced to Rahul Jaimini, who brought this vision to life with the first website.
+            And with this,Big Belly Delivery was launched as a food ordering & delivery platform.
+            With love and support from consumers, Big Belly Delivery expanded far and wide, first through the entire city of Bengaluru and then across the entire country. 
+            As they say, the rest is history.
+            Today,Big Belly Delivery is the leading food ordering and delivery platform in India.
+            The innovative technology, large and nimble delivery service, and exceptional consumer focus at Swiggy enabled a host of benefits that includes lightning fast deliveries, live order tracking and no restrictions on order amount, all while having the pleasure of enjoying your favourite meal wherever you'd like it.</span>
+         </p>
+      </center>
+      <center><button onclick="myFunction()" id="myBtn">Read more</button></center>
+      <script>
+         function myFunction() {
+           var dots = document.getElementById("dots");
+           var moreText = document.getElementById("more");
+           var btnText = document.getElementById("myBtn");
+         
+           if (dots.style.display === "none") {
+             dots.style.display = "inline";
+             btnText.innerHTML = "Read more"; 
+             moreText.style.display = "none";
+           } else {
+             dots.style.display = "none";
+             btnText.innerHTML = "Read less"; 
+             moreText.style.display = "inline";
+           }
+         }
+      </script>
+   </body>
+</html>
